@@ -81,6 +81,22 @@ function monitorCount(rows, columns)  {
   
   console.log(pastaIndex);
   
-  
+   
+//EXAMPLE:  This array of strings transforms into a secret message by putting array methods in practice.  
+let secretMessage = ['Learning', 'is', 'not', 'about', 'what', 'you', 'get', 'easily', 'the', 'first', 'time,', 'it', 'is', 'about', 'what', 'you', 'can', 'figure', 'out.', '2023,', 'Steven', 'Garcia,', 'Learn', 'JavaScript'];
+
+// console.log(secretMessage.length)      //used to check the length of the array.
+secretMessage.pop();                      //used to remove the last string.
+// console.log(secretMessage.length)      //used to compare the length of the array to what it originally was. 
+secretMessage.push('to', 'Program')       //used to add 2 separate stings.
+secretMessage [7] = "right";              //used to change the word 'easily' to 'right'
+//console.log(secretMessage)
+secretMessage.shift()                     //used to remove the first string of the array.
+// console.log(secretMessage)
+secretMessage.unshift('Programing')       //used to add the string 'Programming' to the beginning of the array.
+// console.log(secretMessage)
+secretMessage.splice(6, 5, "know")        //used to remove strings: get,right,the,first,time & replace w/ know.
+// console.log(secretMessage)
+console.log(secretMessage.join(' '))      //used to print the secret message as a whole sentence.
   
   */
