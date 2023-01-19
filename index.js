@@ -60,7 +60,23 @@ function monitorCount(rows, columns)  {
   }
   descendingOrder(5)
   
-  
+  -------------------------------------------------------------------------------------------------------------
+
+  //ARROW FUNCTIONS USING AN ARRAY
+
+  const calcTip = (bill) => {
+  return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
+}                                                                                      //arrow function
+const bills = [125, 555, 44];                                                         //1st array
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];               //2nd array
+
+console.log(bills, tips)
+
+
+const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];        //3rd array
+console.log(totals)
+
+
   -------------------------------------------------------------------------------------------------------------
   //TITLE: ARRAY METHODS: .push() .pop() .join() .slice() .splice() .shift() .unshift() 
   const groceryList = ['orange juice', 'bananas', 'coffee beans', 'brown rice', 'pasta', 'coconut oil', 'plantains'];
@@ -100,3 +116,4 @@ secretMessage.splice(6, 5, "know")        //used to remove strings: get,right,th
 console.log(secretMessage.join(' '))      //used to print the secret message as a whole sentence.
   
   */
+
