@@ -15,8 +15,7 @@ const calcAge = function (birthYear) {
 
   const calcAge = birthYear => 2037 - birthYear;
 
--------------------------------------------------------------------------------------------------------------------
-
+---------------------------------------------------------------------------------------------------------------
 //EXAMPLE: IN AN OFFICE ARRANGED OF SHAPED LIKE A GRID, WE CAN USE A FUNCTION TO CALCULATE THE NUMBER OF MONITORS NEEDED.
 function monitorCount(rows, columns)  {
   
@@ -61,8 +60,7 @@ function monitorCount(rows, columns)  {
   descendingOrder(5)
   
   -------------------------------------------------------------------------------------------------------------
-
-  //ARROW FUNCTIONS USING AN ARRAY
+//ARROW FUNCTIONS USING AN ARRAY
 
   const calcTip = (bill) => {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.20;
@@ -115,5 +113,17 @@ secretMessage.splice(6, 5, "know")        //used to remove strings: get,right,th
 // console.log(secretMessage)
 console.log(secretMessage.join(' '))      //used to print the secret message as a whole sentence.
   
-  */
 
+--------------------------------------------------------------------------------------------------------------
+//NESTED LOOPS 
+const bobsFollowers = ['Jim', 'Bob', 'Charly', 'Tom'];
+const tinasFollowers = ['Jim', 'Bob', 'Amanda'];
+const mutualFollowers = [];
+for (let i = 0; i < bobsFollowers.length; i++) {
+  for (let j = 0; j < tinasFollowers.length; j++) {
+    if (bobsFollowers[i] === tinasFollowers[j]) {
+      mutualFollowers.push(bobsFollowers[i])
+    }
+  }
+}
+*/
