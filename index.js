@@ -128,7 +128,7 @@ for (let i = 0; i < bobsFollowers.length; i++) {
 }
 --------------------------------------------------------------------------------------------------------------
 //ITERATION METHODS (ITERATORS)
-
+//-------.forEach() Method-------//
 const artists = ['Picasso', 'Kahlo', 'Matisse', 'Utamaro'];
 
 artists.forEach(artist => {
@@ -139,9 +139,10 @@ const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
 
 fruits.forEach(function(eachFruit) {
   console.log('I want to eat a '+ eachFruit);
-}
-);
+});
 
+
+//-------.map() Method-------//
 const numbers = [1, 2, 3, 4, 5];
 
 const squareNumbers = numbers.map(number => {
@@ -166,6 +167,31 @@ const smallNumbers = bigNumbers.map(newDigits => {
   return (newDigits / 100);
 })
 
+
+//-------.filter() Method-------//
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+const smallNumbers = randomNumbers.filter(number => {
+  return number < 250;
+})
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+const longFavoriteWords = favoriteWords.filter(
+  word => {
+    return word.length > 7;
+  })
+
+
+  //-------.filter() Method-------//
+const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
+
+const onlyNumbers = things.filter(thing => {
+  return typeof thing === 'number';
+});
+
+console.log(onlyNumbers);
+
 const randomNumbers = [375, 200, 3.14, 7, 13, 852];
 
 // Call .filter() on randomNumbers below
@@ -182,14 +208,8 @@ const longFavoriteWords = favoriteWords.filter(
     return word.length > 7;
   })
 
-const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
 
-const onlyNumbers = things.filter(thing => {
-  return typeof thing === 'number';
-});
-
-console.log(onlyNumbers);
-
+    //-------.findIndex() Method-------//
 //The .findIndex() Method
 const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 
@@ -200,6 +220,17 @@ const foundAnimal = animals.findIndex(someAnimal => {
 const startsWithS = animals.findIndex(theAnimal => {
   return theAnimal[0] === 's' ? true : false;
 });
+
+
+    //-------.reduce() Method-------//
+const newNumbers = [1, 3, 5, 7,];
+
+const newSum = newNumbers.reduce((accumulator, currentValue) => {
+  console.log('The value of accumulator: ', accumulator);
+console.log('The value of currentValue: ', currentValue);
+return  accumulator + currentValue
+}, 10)
+console.log(newSum())
 --------------------------------------------------------------------------------------------------------------
 //HIGHER-ORDER FUNCTIONS
 
