@@ -210,7 +210,6 @@ const longFavoriteWords = favoriteWords.filter(
 
 
     //-------.findIndex() Method-------//
-//The .findIndex() Method
 const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
 
 const foundAnimal = animals.findIndex(someAnimal => {
