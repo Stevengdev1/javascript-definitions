@@ -189,6 +189,17 @@ const onlyNumbers = things.filter(thing => {
 });
 
 console.log(onlyNumbers);
+
+//The .findIndex() Method
+const animals = ['hippo', 'tiger', 'lion', 'seal', 'cheetah', 'monkey', 'salamander', 'elephant'];
+
+const foundAnimal = animals.findIndex(someAnimal => {
+  return someAnimal === 'elephant';
+});
+
+const startsWithS = animals.findIndex(theAnimal => {
+  return theAnimal[0] === 's' ? true : false;
+});
 --------------------------------------------------------------------------------------------------------------
 //HIGHER-ORDER FUNCTIONS
 
