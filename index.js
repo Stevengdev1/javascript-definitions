@@ -135,6 +135,13 @@ artists.forEach(artist => {
   console.log(artist + ' is one of my favorite artists.');
 });
 
+const fruits = ['mango', 'papaya', 'pineapple', 'apple'];
+
+fruits.forEach(function(eachFruit) {
+  console.log('I want to eat a '+ eachFruit);
+}
+);
+
 const numbers = [1, 2, 3, 4, 5];
 
 const squareNumbers = numbers.map(number => {
@@ -142,6 +149,38 @@ const squareNumbers = numbers.map(number => {
 });
 
 console.log(squareNumbers);
+
+const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', 'Whale', 'octopus', 'rabbit', 'lion', 'dog'];
+
+// Create the secretMessage array below
+const secretMessage = animals.map(animalList => {
+  return animalList[0];
+})
+
+console.log(secretMessage.join(''));
+
+const bigNumbers = [100, 200, 300, 400, 500];
+
+// Create the smallNumbers array below
+const smallNumbers = bigNumbers.map(newDigits => {
+  return (newDigits / 100);
+})
+
+const randomNumbers = [375, 200, 3.14, 7, 13, 852];
+
+// Call .filter() on randomNumbers below
+const smallNumbers = randomNumbers.filter(number => {
+  return number < 250;
+})
+
+const favoriteWords = ['nostalgia', 'hyperbole', 'fervent', 'esoteric', 'serene'];
+
+
+// Call .filter() on favoriteWords below
+const longFavoriteWords = favoriteWords.filter(
+  word => {
+    return word.length > 7;
+  })
 
 const things = ['desk', 'chair', 5, 'backpack', 3.14, 100];
 
