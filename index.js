@@ -476,8 +476,18 @@ const tinCan = robotFactory('P-500', true);
 
 tinCan.beep();
 --------------------------------------------------------------------------------------------------------------
-
+SHORTHAND VERSION OF FACTORY 
  
+const robotFactory = (model, mobile) => {
+  return {
+    model,
+    mobile,
+    beep() {
+      console.log('Beep Boop');
+    }
+  }
+}
+--------------------------------------------------------------------------------------------------------------
 
 
 
