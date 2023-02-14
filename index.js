@@ -504,7 +504,30 @@ const robot = {
 };
 const {functionality} = robot;
 --------------------------------------------------------------------------------------------------------------
+BUILT-IN OBJECT METHODS
 
+const robot = {
+	model: 'SAL-1000',
+  mobile: true,
+  sentient: false,
+  armor: 'Steel-plated',
+  energyLevel: 75
+};
+
+// method call Object.keys()
+const robotKeys = Object.keys(robot);
+
+console.log(robotKeys);
+
+// robotEntries are declared below this line:
+const robotEntries = Object.entries(robot)
+console.log(robotEntries);
+
+// newRobot are declared below this line:
+const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, robot);
+
+console.log(newRobot);
+--------------------------------------------------------------------------------------------------------------
 
 
 
